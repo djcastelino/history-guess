@@ -9,11 +9,13 @@ import GuessList from './components/GuessList';
 import GameOver from './components/GameOver';
 import Stats from './components/Stats';
 import Archive from './components/Archive';
+import TestMode from './components/TestMode';
 import './App.css';
 
 const MAX_GUESSES = 6;
 
 function App() {
+  const [isTestMode, setIsTestMode] = useState(false);
   const [gameState, setGameState] = useState<GameState>({
     targetPuzzle: null,
     guesses: [],
@@ -33,6 +35,15 @@ function App() {
   const [archivePuzzleNumber, setArchivePuzzleNumber] = useState<number | null>(null);
 
   useEffect(() => {
+    // Check for test mode in URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const testParam = urlParams.get('test');
+    if (testParam === 'true') {
+      setIsTestMode(true);
+      setLoading(false);
+      return;
+    }
+    
     initGame();
   }, []);
 
@@ -144,6 +155,29 @@ function App() {
         <div className="spinner"></div>
         <p>Loading History Guess...</p>
       </div>
+    );
+  }
+
+  // Test Mode
+  if (isTestMode) {
+    return (
+      <TestMode 
+        onSelectPuzzle={(puzzle: HistoryPuzzle) => {
+          setIsTestMode(false);
+          setGameState({
+            targetPuzzle: puzzle,
+            guesses: [],
+            isComplete: false,
+            isWon: false,
+            currentStreak: 0,
+            maxStreak: 0,
+            gamesPlayed: 0,
+            gamesWon: 0,
+            lastPlayedDate: new Date().toISOString().split('T')[0],
+            puzzleType: puzzle.type,
+          });
+        }}
+      />
     );
   }
 
