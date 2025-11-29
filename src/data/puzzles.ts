@@ -1,5 +1,5 @@
 // History Guess - Complete Puzzle Database
-// 50 puzzles: 17 figures, 17 events, 16 inventions
+// 100 puzzles: 34 figures, 34 events, 32 inventions
 // All facts verified with sources cited
 
 export type PuzzleType = "figure" | "event" | "invention";
@@ -21,7 +21,7 @@ export interface HistoryPuzzle {
 
 export const PUZZLES: HistoryPuzzle[] = [
   // ========================================
-  // HISTORICAL FIGURES (17 total)
+  // HISTORICAL FIGURES (34 total)
   // ========================================
   
   // EASY FIGURES (7)
@@ -1088,6 +1088,1067 @@ export const PUZZLES: HistoryPuzzle[] = [
     funFact: "The agricultural revolution was terrible for human health! Early farmers were shorter, had worse teeth, more diseases, and died younger than hunter-gatherers. But farming could feed 50x more people per square mile, so it spread anyway - more people beat healthier people!",
     funFactSource: "National Geographic",
     funFactSourceUrl: "https://www.nationalgeographic.org/article/agricultural-revolution/"
+  },
+  
+  // ========================================
+  // ADDITIONAL FIGURES (51-67 = 17 more)
+  // ========================================
+  
+  {
+    id: 51,
+    type: "figure",
+    name: "Leonardo da Vinci",
+    category: "Artist/Inventor",
+    era: "Renaissance",
+    difficulty: "easy",
+    clues: [
+      "Italian Renaissance polymath born in 1452",
+      "Master painter, sculptor, architect, and engineer",
+      "Painted one of the world's most famous portraits",
+      "Created 'The Last Supper' and studied human anatomy",
+      "Designed flying machines centuries before they existed",
+      "Painted the Mona Lisa and filled notebooks with inventions"
+    ],
+    funFact: "Leonardo da Vinci wrote all his personal notes in mirror writing (right to left)! He filled over 7,000 pages of notebooks with inventions, observations, and art. He designed helicopters, tanks, and submarines 400+ years before they were built. He was also ambidextrous and could write with both hands simultaneously!",
+    funFactSource: "British Library",
+    funFactSourceUrl: "https://www.bl.uk/people/leonardo-da-vinci"
+  },
+  
+  {
+    id: 52,
+    type: "figure",
+    name: "Marie Curie",
+    category: "Scientist",
+    era: "Modern",
+    difficulty: "easy",
+    clues: [
+      "Polish-born scientist who worked in France",
+      "First woman to win a Nobel Prize",
+      "Pioneered research on radioactivity",
+      "Only person to win Nobel Prizes in two different sciences",
+      "Discovered radium and polonium",
+      "Won Nobel Prizes in Physics (1903) and Chemistry (1911)"
+    ],
+    funFact: "Marie Curie's notebooks are still radioactive and will be for 1,500 years! They're kept in lead-lined boxes. She carried test tubes of radium in her pockets and stored them in her desk drawer because they glowed pretty. She died from radiation exposure. Her daughter Irène also won a Nobel Prize in Chemistry!",
+    funFactSource: "Nobel Prize Organization",
+    funFactSourceUrl: "https://www.nobelprize.org/prizes/physics/1903/marie-curie/facts/"
+  },
+  
+  {
+    id: 53,
+    type: "figure",
+    name: "Genghis Khan",
+    category: "Military Leader",
+    era: "Medieval",
+    difficulty: "easy",
+    clues: [
+      "Born in Mongolia around 1162",
+      "United nomadic tribes into a powerful empire",
+      "Created the largest contiguous land empire in history",
+      "His empire stretched from China to Eastern Europe",
+      "Founder of the Mongol Empire",
+      "Conquered more territory than any other leader in history"
+    ],
+    funFact: "Genghis Khan's empire was so large it connected the East and West for the first time via the Silk Road! About 16 million men alive today are direct descendants of Genghis Khan. His empire killed so many people that forests regrew and removed 700 million tons of CO2 from the atmosphere!",
+    funFactSource: "National Geographic",
+    funFactSourceUrl: "https://www.nationalgeographic.com/culture/article/mongolia-genghis-khan-dna"
+  },
+  
+  {
+    id: 54,
+    type: "figure",
+    name: "Martin Luther King Jr.",
+    category: "Civil Rights Leader",
+    era: "Modern",
+    difficulty: "easy",
+    clues: [
+      "American civil rights leader born in 1929",
+      "Baptist minister who advocated nonviolent resistance",
+      "Led the Montgomery Bus Boycott",
+      "Delivered famous 'I Have a Dream' speech in 1963",
+      "Won Nobel Peace Prize at age 35",
+      "Assassinated in Memphis in 1968 while fighting for equality"
+    ],
+    funFact: "MLK's 'I Have a Dream' speech wasn't in his prepared notes! Gospel singer Mahalia Jackson shouted 'Tell them about the dream, Martin!' and he improvised the most famous part. He was the youngest person to win the Nobel Peace Prize at the time (35 years old). He was assassinated the day after delivering his prophetic 'I've Been to the Mountaintop' speech.",
+    funFactSource: "The King Center",
+    funFactSourceUrl: "https://thekingcenter.org/about-dr-king/"
+  },
+  
+  {
+    id: 55,
+    type: "figure",
+    name: "Joan of Arc",
+    category: "Military Leader",
+    era: "Medieval",
+    difficulty: "medium",
+    clues: [
+      "French peasant girl born around 1412",
+      "Claimed to receive visions from God",
+      "Led French army to victory during Hundred Years' War",
+      "Captured by English allies and tried for heresy",
+      "Burned at the stake at age 19",
+      "Later declared a saint and symbol of French unity"
+    ],
+    funFact: "Joan of Arc was only 17 when she led the French army to victory! She wore men's armor and cut her hair short. After being burned at stake in 1431, her ashes were thrown in the Seine River. 25 years later she was exonerated, and in 1920 she was made a saint. She never learned to read or write.",
+    funFactSource: "Smithsonian Magazine",
+    funFactSourceUrl: "https://www.smithsonianmag.com/history/joan-of-arc-180949506/"
+  },
+  
+  {
+    id: 56,
+    type: "figure",
+    name: "Mahatma Gandhi",
+    category: "Political Leader",
+    era: "Modern",
+    difficulty: "easy",
+    clues: [
+      "Indian independence leader born in 1869",
+      "Pioneered nonviolent civil disobedience",
+      "Led India's independence movement against British rule",
+      "Famous for Salt March and hunger strikes",
+      "Inspired civil rights movements worldwide",
+      "Assassinated in 1948, called 'Father of the Nation' in India"
+    ],
+    funFact: "Gandhi was nominated for the Nobel Peace Prize 5 times but never won! The Nobel Committee later admitted this was a regret. He inspired MLK Jr., Nelson Mandela, and many others. Gandhi's funeral was attended by 2 million people. He was assassinated by a fellow Hindu who opposed his tolerance of Muslims.",
+    funFactSource: "Nobel Prize Organization",
+    funFactSourceUrl: "https://www.nobelprize.org/prizes/facts/gandhi-the-missing-laureate/"
+  },
+  
+  {
+    id: 57,
+    type: "figure",
+    name: "Nikola Tesla",
+    category: "Inventor",
+    era: "Modern",
+    difficulty: "medium",
+    clues: [
+      "Serbian-American inventor born in 1856",
+      "Pioneered alternating current (AC) electricity",
+      "Worked briefly for Thomas Edison before rivalry",
+      "Held over 300 patents for electrical devices",
+      "Envisioned wireless power transmission",
+      "The Tesla coil and electric car company bear his name"
+    ],
+    funFact: "Tesla claimed to have invented a 'death ray' weapon! He also said he could split the Earth in half like an apple. Despite his brilliance, he died poor and alone in a New York hotel room. He was obsessed with the number 3 and had a photographic memory. The unit of magnetic flux density (Tesla) is named after him.",
+    funFactSource: "Tesla Science Center",
+    funFactSourceUrl: "https://teslasciencecenter.org/"
+  },
+  
+  {
+    id: 58,
+    type: "figure",
+    name: "Nelson Mandela",
+    category: "Political Leader",
+    era: "Modern",
+    difficulty: "easy",
+    clues: [
+      "South African anti-apartheid revolutionary",
+      "Imprisoned for 27 years for fighting racial segregation",
+      "Released in 1990 after international pressure",
+      "Became South Africa's first Black president in 1994",
+      "Won Nobel Peace Prize for ending apartheid",
+      "Global symbol of reconciliation and human rights"
+    ],
+    funFact: "Mandela was on the US terrorism watch list until 2008! He spent 27 years in prison, 18 of them breaking rocks in a limestone quarry on Robben Island. Despite this, he forgave his jailers and worked for reconciliation. His prison number (46664) became an AIDS awareness campaign. He lived to 95 and is a global icon.",
+    funFactSource: "Nelson Mandela Foundation",
+    funFactSourceUrl: "https://www.nelsonmandela.org/"
+  },
+  
+  {
+    id: 59,
+    type: "figure",
+    name: "Alexander the Great",
+    category: "Military Leader",
+    era: "Ancient",
+    difficulty: "easy",
+    clues: [
+      "Macedonian king born in 356 BCE",
+      "Tutored by philosopher Aristotle",
+      "Never lost a battle in his military career",
+      "Conquered Persian Empire by age 30",
+      "Created one of the largest empires of the ancient world",
+      "Died mysteriously at age 32, possibly from poison"
+    ],
+    funFact: "Alexander conquered most of the known world by age 30! He founded over 20 cities named Alexandria. His horse Bucephalus was buried with military honors. Alexander was never defeated in battle and conquered territory from Greece to India. He died at 32 under mysterious circumstances - possibly malaria, poison, or typhoid.",
+    funFactSource: "Ancient History Encyclopedia",
+    funFactSourceUrl: "https://www.worldhistory.org/Alexander_the_Great/"
+  },
+  
+  {
+    id: 60,
+    type: "figure",
+    name: "Harriet Tubman",
+    category: "Abolitionist",
+    era: "Modern",
+    difficulty: "medium",
+    clues: [
+      "Born into slavery in Maryland around 1822",
+      "Escaped to freedom in 1849",
+      "Returned to slave states 13 times to rescue others",
+      "Conducted the Underground Railroad",
+      "Freed approximately 70 enslaved people",
+      "Civil War spy and first woman to lead armed expedition"
+    ],
+    funFact: "Harriet Tubman had a $40,000 bounty on her head (about $1.2 million today)! She never lost a single passenger on the Underground Railroad. During the Civil War, she was a spy, scout, and nurse. She suffered from narcolepsy and seizures from a head injury. She's going to be on the $20 bill!",
+    funFactSource: "National Park Service",
+    funFactSourceUrl: "https://www.nps.gov/people/harriet-tubman.htm"
+  },
+  
+  {
+    id: 61,
+    type: "figure",
+    name: "Confucius",
+    category: "Philosopher",
+    era: "Ancient",
+    difficulty: "medium",
+    clues: [
+      "Chinese philosopher born in 551 BCE",
+      "Teachings emphasized personal ethics and morality",
+      "Promoted importance of family and social harmony",
+      "His philosophy influenced East Asian culture for millennia",
+      "Created the foundation of Confucianism",
+      "Sayings compiled in the 'Analects'"
+    ],
+    funFact: "Confucius failed as a politician and spent years wandering China with his disciples! He only gained fame after his death. Confucianism became the official philosophy of China for 2,000 years. During the Cultural Revolution, his teachings were suppressed, but they've resurged. Over 6 million people can trace ancestry to Confucius!",
+    funFactSource: "Stanford Encyclopedia of Philosophy",
+    funFactSourceUrl: "https://plato.stanford.edu/entries/confucius/"
+  },
+  
+  {
+    id: 62,
+    type: "figure",
+    name: "Winston Churchill",
+    category: "Political Leader",
+    era: "Modern",
+    difficulty: "easy",
+    clues: [
+      "British Prime Minister during World War II",
+      "Known for inspiring speeches during dark times",
+      "Rallied Britain with 'We shall never surrender' speech",
+      "Awarded Nobel Prize in Literature in 1953",
+      "Coined the term 'Iron Curtain'",
+      "Led Britain through the Blitz and to victory"
+    ],
+    funFact: "Churchill was a prolific painter and wrote 43 books! He won the Nobel Prize for Literature, not Peace. He suffered from depression which he called his 'black dog.' He drank champagne and smoked cigars daily but lived to 90. He's the only British PM to win a Nobel Prize and was voted greatest Briton ever.",
+    funFactSource: "Churchill Archives Centre",
+    funFactSourceUrl: "https://www.chu.cam.ac.uk/archives/"
+  },
+  
+  {
+    id: 63,
+    type: "figure",
+    name: "Mozart",
+    category: "Composer",
+    era: "Modern",
+    difficulty: "medium",
+    clues: [
+      "Austrian musical prodigy born in 1756",
+      "Composed his first piece at age 5",
+      "Created over 600 works in his short life",
+      "Master of opera, symphony, and concerto",
+      "Died mysteriously at age 35",
+      "Considered one of the greatest composers ever"
+    ],
+    funFact: "Mozart could transcribe an entire piece of music after hearing it once! At 14, he heard Allegri's 'Miserere' in the Vatican (which was forbidden to copy) and wrote it from memory. He died at 35, possibly from strep throat. His burial site is unknown. His sister was also a musical prodigy but was forbidden to perform!",
+    funFactSource: "Mozarteum Foundation",
+    funFactSourceUrl: "https://mozarteum.at/"
+  },
+  
+  {
+    id: 64,
+    type: "figure",
+    name: "Rosa Parks",
+    category: "Civil Rights Activist",
+    era: "Modern",
+    difficulty: "easy",
+    clues: [
+      "African American woman born in Alabama in 1913",
+      "Refused to give up bus seat to white passenger",
+      "Her arrest sparked Montgomery Bus Boycott in 1955",
+      "Became 'Mother of the Civil Rights Movement'",
+      "Worked with MLK Jr. and NAACP",
+      "Awarded Presidential Medal of Freedom and Congressional Gold Medal"
+    ],
+    funFact: "Rosa Parks wasn't just tired that day - she was a trained civil rights activist! She had attended workshops on civil disobedience. She wasn't the first to refuse to give up a seat, but the NAACP chose her case because she was an ideal plaintiff. She faced death threats and couldn't find work in Montgomery after the boycott.",
+    funFactSource: "Rosa Parks Museum",
+    funFactSourceUrl: "https://www.troy.edu/rosaparks/"
+  },
+  
+  {
+    id: 65,
+    type: "figure",
+    name: "Socrates",
+    category: "Philosopher",
+    era: "Ancient",
+    difficulty: "medium",
+    clues: [
+      "Ancient Greek philosopher born around 470 BCE",
+      "Developed the Socratic method of questioning",
+      "Never wrote down his teachings",
+      "Known through writings of his student Plato",
+      "Charged with corrupting Athenian youth",
+      "Chose to drink hemlock poison rather than renounce his beliefs"
+    ],
+    funFact: "Socrates wrote absolutely nothing! Everything we know comes from his students Plato and Xenophon. He was ugly by Greek standards but charismatic. His wife Xantippe was supposedly very difficult. He served as a soldier and was known for his physical endurance. He voluntarily drank hemlock to die for his principles.",
+    funFactSource: "Stanford Encyclopedia of Philosophy",
+    funFactSourceUrl: "https://plato.stanford.edu/entries/socrates/"
+  },
+  
+  {
+    id: 66,
+    type: "figure",
+    name: "Florence Nightingale",
+    category: "Nurse/Reformer",
+    era: "Modern",
+    difficulty: "medium",
+    clues: [
+      "British nurse born in 1820",
+      "Revolutionized nursing and hospital sanitation",
+      "Served in the Crimean War (1853-1856)",
+      "Known as 'The Lady with the Lamp'",
+      "Founded first secular nursing school in 1860",
+      "Pioneer of modern nursing and medical statistics"
+    ],
+    funFact: "Florence Nightingale was a math genius and pioneer of data visualization! She invented the polar area diagram (a type of pie chart) to show how most soldiers died from disease, not wounds. She was bedridden for much of her later life but continued working. She was the first woman elected to the Royal Statistical Society!",
+    funFactSource: "Florence Nightingale Museum",
+    funFactSourceUrl: "https://www.florence-nightingale.co.uk/"
+  },
+  
+  {
+    id: 67,
+    type: "figure",
+    name: "Benjamin Franklin",
+    category: "Polymath",
+    era: "Modern",
+    difficulty: "easy",
+    clues: [
+      "American Founding Father born in 1706",
+      "Inventor, scientist, diplomat, and writer",
+      "Proved lightning is electricity with kite experiment",
+      "Helped draft the Declaration of Independence",
+      "Invented bifocals, lightning rod, and Franklin stove",
+      "Face on US $100 bill, never served as president"
+    ],
+    funFact: "Benjamin Franklin never patented any of his inventions because he wanted everyone to benefit! He founded the first public library, fire department, and postal system in America. He was a ladies' man in Paris at age 70+. He proposed Daylight Saving Time. He's the only Founding Father who signed all 4 key documents of US founding!",
+    funFactSource: "Franklin Institute",
+    funFactSourceUrl: "https://www.fi.edu/benjamin-franklin"
+  },
+  
+  // ========================================
+  // ADDITIONAL EVENTS (68-84 = 17 more)
+  // ========================================
+  
+  {
+    id: 68,
+    type: "event",
+    name: "Fall of the Berlin Wall",
+    year: "1989",
+    location: "Berlin, Germany",
+    era: "Modern",
+    difficulty: "easy",
+    clues: [
+      "Symbolic event marking the end of the Cold War",
+      "Occurred in a divided European capital city",
+      "Concrete barrier had separated families for 28 years",
+      "Happened on November 9, 1989",
+      "East Germans were allowed to cross freely for first time",
+      "Berlin Wall fell, reuniting East and West Germany"
+    ],
+    funFact: "The Fall of the Berlin Wall happened by accident! A spokesperson mistakenly announced that East Germans could cross the border 'immediately' when he meant the next day. Thousands rushed to the wall, guards had no orders, and they opened the gates. David Hasselhoff performed there shortly after. Pieces of the wall are now sold worldwide!",
+    funFactSource: "BBC History",
+    funFactSourceUrl: "https://www.bbc.co.uk/history/events/fall_of_the_berlin_wall"
+  },
+  
+  {
+    id: 69,
+    type: "event",
+    name: "Signing of the Magna Carta",
+    year: "1215",
+    location: "Runnymede, England",
+    era: "Medieval",
+    difficulty: "medium",
+    clues: [
+      "Medieval document limiting royal power",
+      "King forced to sign by rebellious barons",
+      "Established principle that everyone is subject to law",
+      "Signed at Runnymede meadow in June 1215",
+      "Foundation for constitutional law and human rights",
+      "King John sealed the Magna Carta under pressure"
+    ],
+    funFact: "The Magna Carta didn't give rights to common people - only to wealthy barons! King John had it annulled by the Pope 10 weeks later, which started a civil war. Only 3 of the original 63 clauses remain in British law today. Of 4 original copies, one sold for $21.3 million! It influenced the US Constitution and Bill of Rights.",
+    funFactSource: "British Library",
+    funFactSourceUrl: "https://www.bl.uk/magna-carta"
+  },
+  
+  {
+    id: 70,
+    type: "event",
+    name: "Apollo 11 Moon Landing",
+    year: "1969",
+    location: "Moon (launched from USA)",
+    era: "Modern",
+    difficulty: "easy",
+    clues: [
+      "Historic space achievement in July 1969",
+      "Three astronauts on board: Armstrong, Aldrin, Collins",
+      "First humans to land on another celestial body",
+      "Armstrong's famous 'one small step' quote",
+      "Watched by 600 million people on TV",
+      "NASA's Apollo 11 landed humans on the Moon"
+    ],
+    funFact: "The Apollo 11 computer had less power than a modern smartphone! Armstrong had only 25 seconds of fuel left when landing. Buzz Aldrin took communion on the Moon. They left a disc with messages from 73 world leaders, Apollo 1 mission patch, and US flag. Armstrong's first step was actually a 3.5-foot drop!",
+    funFactSource: "NASA",
+    funFactSourceUrl: "https://www.nasa.gov/mission_pages/apollo/apollo11.html"
+  },
+  
+  {
+    id: 71,
+    type: "event",
+    name: "D-Day (Normandy Invasion)",
+    year: "1944",
+    location: "Normandy, France",
+    era: "Modern",
+    difficulty: "easy",
+    clues: [
+      "Largest amphibious military invasion in history",
+      "Occurred on June 6, 1944",
+      "Allied forces landed on five French beaches",
+      "Turning point of World War II in Europe",
+      "Code-named Operation Overlord",
+      "Over 150,000 troops landed in Normandy on D-Day"
+    ],
+    funFact: "D-Day involved the most elaborate deception in military history! Operation Bodyguard used fake armies, dummy tanks, and fake radio traffic to trick the Germans. The invasion was delayed 24 hours due to weather. Over 4,000 Allied soldiers died that day. Hitler was asleep and his staff feared waking him to tell him about the invasion!",
+    funFactSource: "National WWII Museum",
+    funFactSourceUrl: "https://www.nationalww2museum.org/war/articles/d-day-june-6-1944"
+  },
+  
+  {
+    id: 72,
+    type: "event",
+    name: "Boston Tea Party",
+    year: "1773",
+    location: "Boston, Massachusetts",
+    era: "Modern",
+    difficulty: "easy",
+    clues: [
+      "Political protest against British taxation",
+      "Occurred on December 16, 1773",
+      "Colonists disguised as Native Americans",
+      "Dumped 342 chests into Boston Harbor",
+      "Protest against Tea Act and 'taxation without representation'",
+      "Sparked the American Revolutionary War"
+    ],
+    funFact: "The Boston Tea Party destroyed 92,000 pounds of tea worth $1.7 million today! The 'Indians' were poorly disguised - everyone knew who they were. John Adams called it the 'grandest event' yet. The harbor smelled like tea for weeks. This wasn't called the 'Tea Party' until the 1820s - 50 years later!",
+    funFactSource: "Boston Tea Party Ships & Museum",
+    funFactSourceUrl: "https://www.bostonteapartyship.com/"
+  },
+  
+  {
+    id: 73,
+    type: "event",
+    name: "Chernobyl Nuclear Disaster",
+    year: "1986",
+    location: "Chernobyl, Ukraine (USSR)",
+    era: "Modern",
+    difficulty: "medium",
+    clues: [
+      "Worst nuclear power plant accident in history",
+      "Occurred on April 26, 1986",
+      "Explosion and fire released massive radiation",
+      "Entire city evacuated and remains abandoned",
+      "Created 30km exclusion zone",
+      "Soviet nuclear reactor exploded in Ukraine"
+    ],
+    funFact: "Chernobyl released 400 times more radiation than Hiroshima! The 'liquidators' who cleaned up received fatal doses. The explosion blew a 2,000-ton reactor lid into the air. A nearby forest turned red and died (Red Forest). The abandoned city of Pripyat is now a tourist destination. The area won't be safe for 20,000 years!",
+    funFactSource: "International Atomic Energy Agency",
+    funFactSourceUrl: "https://www.iaea.org/chernobyl"
+  },
+  
+  {
+    id: 74,
+    type: "event",
+    name: "Black Death (Bubonic Plague)",
+    year: "1347-1353",
+    location: "Europe, Asia, North Africa",
+    era: "Medieval",
+    difficulty: "medium",
+    clues: [
+      "Devastating pandemic in the 14th century",
+      "Spread by fleas on rats along trade routes",
+      "Killed 30-60% of Europe's population",
+      "Victims developed black buboes on their bodies",
+      "Wiped out 75-200 million people worldwide",
+      "Changed medieval society forever"
+    ],
+    funFact: "The Black Death killed so many people that it took 200 years for Europe's population to recover! Some villages were completely abandoned. It arrived in Europe on ships from Asia - the 'plague ships.' Jews were falsely blamed and persecuted. The plague doctor outfit with the bird mask is iconic. Some Europeans have genetic immunity today!",
+    funFactSource: "World Health Organization",
+    funFactSourceUrl: "https://www.who.int/health-topics/plague"
+  },
+  
+  {
+    id: 75,
+    type: "event",
+    name: "Assassination of Archduke Franz Ferdinand",
+    year: "1914",
+    location: "Sarajevo, Bosnia",
+    era: "Modern",
+    difficulty: "medium",
+    clues: [
+      "Event that triggered World War I",
+      "Occurred on June 28, 1914",
+      "Heir to Austro-Hungarian throne killed",
+      "Assassin was 19-year-old Gavrilo Princip",
+      "Driver made wrong turn, bringing victim to assassin",
+      "One gunshot sparked the deadliest war in history to that point"
+    ],
+    funFact: "The assassination was almost pure luck! The first assassination attempt (bomb) failed. The Archduke's driver made a wrong turn onto the very street where Princip happened to be buying a sandwich. Princip couldn't be executed because he was 27 days too young (under 20). He died of tuberculosis in prison at age 23.",
+    funFactSource: "Imperial War Museums",
+    funFactSourceUrl: "https://www.iwm.org.uk/history/the-assassination-of-archduke-franz-ferdinand"
+  },
+  
+  {
+    id: 76,
+    type: "event",
+    name: "Gutenberg Prints First Bible",
+    year: "c. 1455",
+    location: "Mainz, Germany",
+    era: "Medieval",
+    difficulty: "hard",
+    clues: [
+      "Revolutionary use of movable type printing",
+      "First major book printed in the West",
+      "Made books accessible beyond wealthy elite",
+      "Printed in Latin in the 1450s",
+      "Only 180 copies produced, 49 survive",
+      "Johannes Gutenberg's printing press changed history"
+    ],
+    funFact: "Gutenberg's Bible revolutionized the world but left him bankrupt! Each Bible had 1,282 pages and took 3 years to print all copies. Today, a complete Gutenberg Bible sold for $5.4 million! Gutenberg's movable type printing spread across Europe in 50 years. This invention enabled the Renaissance and Reformation!",
+    funFactSource: "British Library",
+    funFactSourceUrl: "https://www.bl.uk/treasures/gutenberg/homepage.html"
+  },
+  
+  {
+    id: 77,
+    type: "event",
+    name: "Storming of the Bastille",
+    year: "1789",
+    location: "Paris, France",
+    era: "Modern",
+    difficulty: "medium",
+    clues: [
+      "Sparked the French Revolution",
+      "Occurred on July 14, 1789",
+      "Angry mob attacked royal fortress and prison",
+      "Found only 7 prisoners inside",
+      "Symbol of monarchy's tyranny",
+      "France celebrates Bastille Day as national holiday"
+    ],
+    funFact: "Only 7 prisoners were in the Bastille when it fell - 4 forgers, 2 lunatics, and 1 aristocrat! The prison was going to be demolished anyway. The mob's original goal was to get gunpowder. The fortress was demolished and sold as souvenirs. The governor's head was paraded on a pike. This sparked the violent French Revolution!",
+    funFactSource: "Smithsonian Magazine",
+    funFactSourceUrl: "https://www.smithsonianmag.com/history/what-really-happened-bastille-180972083/"
+  },
+  
+  {
+    id: 78,
+    type: "event",
+    name: "Titanic Sinks",
+    year: "1912",
+    location: "North Atlantic Ocean",
+    era: "Modern",
+    difficulty: "easy",
+    clues: [
+      "Largest ship afloat at the time",
+      "Billed as 'unsinkable' on maiden voyage",
+      "Hit iceberg on April 14, 1912",
+      "Not enough lifeboats for all passengers",
+      "Over 1,500 people died",
+      "'Unsinkable' luxury liner sank in under 3 hours"
+    ],
+    funFact: "The Titanic's band kept playing as the ship sank! None survived. The ship broke in half but this wasn't believed until the wreck was found in 1985. First-class passengers had 60% survival rate; third-class had 25%. The last survivor died in 2009 at age 97. A lifeboat drill scheduled for that day was cancelled!",
+    funFactSource: "Encyclopedia Titanica",
+    funFactSourceUrl: "https://www.encyclopedia-titanica.org/"
+  },
+  
+  {
+    id: 79,
+    type: "event",
+    name: "Cuban Missile Crisis",
+    year: "1962",
+    location: "Cuba/USA/USSR",
+    era: "Modern",
+    difficulty: "medium",
+    clues: [
+      "13-day confrontation between superpowers",
+      "Occurred in October 1962",
+      "Soviet missiles discovered in Cuba, 90 miles from Florida",
+      "Closest the world came to nuclear war",
+      "JFK ordered naval blockade of Cuba",
+      "Crisis resolved when USSR removed missiles"
+    ],
+    funFact: "We were seconds away from nuclear war during the Cuban Missile Crisis! A Soviet submarine officer named Vasili Arkhipov prevented his captain from launching a nuclear torpedo when US ships were dropping depth charges. If he'd agreed, WWIII would have started. The world didn't know how close we came until the 1990s!",
+    funFactSource: "JFK Presidential Library",
+    funFactSourceUrl: "https://www.jfklibrary.org/learn/about-jfk/jfk-in-history/cuban-missile-crisis"
+  },
+  
+  {
+    id: 80,
+    type: "event",
+    name: "Signing of the Declaration of Independence",
+    year: "1776",
+    location: "Philadelphia, Pennsylvania",
+    era: "Modern",
+    difficulty: "easy",
+    clues: [
+      "13 American colonies declared independence",
+      "Adopted on July 4, 1776",
+      "Drafted primarily by Thomas Jefferson",
+      "Listed grievances against King George III",
+      "'Life, Liberty, and the pursuit of Happiness'",
+      "Birth of the United States of America"
+    ],
+    funFact: "The Declaration of Independence wasn't actually signed on July 4! Most signatures were added August 2, 1776. One signature is huge - John Hancock's - which is why 'John Hancock' means signature. Some signers were hunted as traitors. The document was hidden during the War of 1812. It's displayed with the Constitution in the National Archives!",
+    funFactSource: "National Archives",
+    funFactSourceUrl: "https://www.archives.gov/founding-docs/declaration"
+  },
+  
+  {
+    id: 81,
+    type: "event",
+    name: "Women's Suffrage (19th Amendment)",
+    year: "1920",
+    location: "United States",
+    era: "Modern",
+    difficulty: "medium",
+    clues: [
+      "Constitutional amendment granting voting rights",
+      "Culmination of decades of activism",
+      "Ratified on August 18, 1920",
+      "Women fought for this right since 1848",
+      "Passed by ONE vote in Tennessee legislature",
+      "American women gained the right to vote"
+    ],
+    funFact: "Women's suffrage passed by just ONE vote! Tennessee legislator Harry Burn changed his vote after getting a letter from his mother saying 'be a good boy.' Some suffragettes went on hunger strikes and were force-fed. New Zealand was first to grant women's vote (1893). Some American women couldn't vote until 1965 (Voting Rights Act)!",
+    funFactSource: "National Archives",
+    funFactSourceUrl: "https://www.archives.gov/milestone-documents/19th-amendment"
+  },
+  
+  {
+    id: 82,
+    type: "event",
+    name: "First Moon Orbit (Apollo 8)",
+    year: "1968",
+    location: "Moon orbit",
+    era: "Modern",
+    difficulty: "hard",
+    clues: [
+      "First humans to leave Earth orbit",
+      "Occurred in December 1968",
+      "Orbited the Moon 10 times",
+      "Astronauts read from Genesis on Christmas Eve",
+      "First to see Earthrise from the Moon",
+      "Set stage for Moon landing 7 months later"
+    ],
+    funFact: "Apollo 8's Christmas Eve broadcast was the most-watched TV program ever at the time! The crew read Genesis while orbiting the Moon. The 'Earthrise' photo became one of the most influential images ever taken. The mission was considered 'risky' but succeeded perfectly. It gave hope during a tumultuous 1968 (Vietnam, assassinations, riots).",
+    funFactSource: "NASA",
+    funFactSourceUrl: "https://www.nasa.gov/mission_pages/apollo/missions/apollo8.html"
+  },
+  
+  {
+    id: 83,
+    type: "event",
+    name: "Invention of Democracy (Athens)",
+    year: "c. 508 BCE",
+    location: "Athens, Greece",
+    era: "Ancient",
+    difficulty: "hard",
+    clues: [
+      "Revolutionary political system in ancient Greece",
+      "Citizens voted directly on laws and policies",
+      "Only free adult males could participate",
+      "Introduced by Cleisthenes around 508 BCE",
+      "Foundation for modern democratic governments",
+      "Athens created the world's first democracy"
+    ],
+    funFact: "Athenian democracy was direct, not representative - citizens voted on everything! But only 10-20% of the population could vote (no women, slaves, or foreigners). They used ostracism to exile dangerous politicians for 10 years. Some decisions were made by lottery! This democracy only lasted about 180 years before being conquered.",
+    funFactSource: "Stanford University",
+    funFactSourceUrl: "https://plato.stanford.edu/entries/democracy-ancient/"
+  },
+  
+  {
+    id: 84,
+    type: "event",
+    name: "Abolition of Slavery (13th Amendment)",
+    year: "1865",
+    location: "United States",
+    era: "Modern",
+    difficulty: "easy",
+    clues: [
+      "Constitutional amendment ending forced labor",
+      "Passed after the Civil War",
+      "Ratified on December 6, 1865",
+      "Formally abolished slavery in the United States",
+      "Lincoln pushed for passage before his death",
+      "13th Amendment freed 4 million enslaved people"
+    ],
+    funFact: "Slavery technically still isn't completely abolished! The 13th Amendment has an exception for punishment of crime, which created the convict leasing system. Mississippi didn't officially ratify it until 2013! Some states rejected it: Delaware (until 1901), Kentucky (1976). The last slave ship arrived in 1860, 52 years after imports were banned!",
+    funFactSource: "National Archives",
+    funFactSourceUrl: "https://www.archives.gov/milestone-documents/13th-amendment"
+  },
+  
+  // ========================================
+  // ADDITIONAL INVENTIONS (85-100 = 16 more)
+  // ========================================
+  
+  {
+    id: 85,
+    type: "invention",
+    name: "Telephone",
+    year: "1876",
+    location: "Boston, USA",
+    era: "Modern",
+    category: "Communication",
+    difficulty: "easy",
+    clues: [
+      "Revolutionary communication device",
+      "Invented in 1876 by Scottish-born inventor",
+      "First words: 'Mr. Watson, come here, I want to see you'",
+      "Transmitted voice over wires using electrical signals",
+      "Alexander Graham Bell patented this invention",
+      "Changed long-distance communication forever"
+    ],
+    funFact: "Alexander Graham Bell beat Elisha Gray to the patent office by just 2 hours! Bell's first call was to his assistant in the next room asking for help after spilling acid. Bell refused to have a telephone in his study because it was too distracting. He also invented the metal detector and considered the telephone his least important invention!",
+    funFactSource: "Library of Congress",
+    funFactSourceUrl: "https://www.loc.gov/collections/alexander-graham-bell-papers/"
+  },
+  
+  {
+    id: 86,
+    type: "invention",
+    name: "Penicillin",
+    year: "1928",
+    location: "London, England",
+    era: "Modern",
+    category: "Medicine",
+    difficulty: "easy",
+    clues: [
+      "First widely used antibiotic drug",
+      "Discovered accidentally in 1928",
+      "Scientist found mold killing bacteria in petri dish",
+      "Revolutionized treatment of bacterial infections",
+      "Saved countless lives in World War II",
+      "Alexander Fleming discovered this life-saving medicine"
+    ],
+    funFact: "Penicillin was discovered by accident when Fleming went on vacation! He returned to find mold killing bacteria in a forgotten petri dish. He almost threw it away. It took 12 years to purify for mass production. Fleming shared the Nobel Prize. Penicillin saved millions of lives - Churchill's life was saved by it!",
+    funFactSource: "Nobel Prize Organization",
+    funFactSourceUrl: "https://www.nobelprize.org/prizes/medicine/1945/fleming/facts/"
+  },
+  
+  {
+    id: 87,
+    type: "invention",
+    name: "Light Bulb",
+    year: "1879",
+    location: "Menlo Park, USA",
+    era: "Modern",
+    category: "Technology",
+    difficulty: "easy",
+    clues: [
+      "Illumination device that revolutionized modern life",
+      "Practical version developed in 1879",
+      "Used carbon filament in vacuum",
+      "Thomas Edison perfected the design",
+      "Ended reliance on gas lamps and candles",
+      "Made electric lighting affordable and practical"
+    ],
+    funFact: "Edison didn't invent the light bulb - he improved it! Over 20 inventors worked on electric lights before him. Edison tested 3,000 different materials for filaments. His first bulb lasted 13.5 hours; he got it to 1,200 hours. He famously said 'I have not failed. I've just found 10,000 ways that won't work.'",
+    funFactSource: "Edison Innovation Foundation",
+    funFactSourceUrl: "https://www.nps.gov/edis/index.htm"
+  },
+  
+  {
+    id: 88,
+    type: "invention",
+    name: "Airplane",
+    year: "1903",
+    location: "Kitty Hawk, North Carolina",
+    era: "Modern",
+    category: "Transportation",
+    difficulty: "easy",
+    clues: [
+      "First successful powered flight",
+      "Invented by two bicycle-making brothers",
+      "First flight on December 17, 1903",
+      "Flew for only 12 seconds on first attempt",
+      "Wright Brothers achieved controlled, sustained flight",
+      "Transformed global travel and warfare"
+    ],
+    funFact: "The Wright Brothers' first flight (12 seconds, 120 feet) was shorter than a Boeing 747's wingspan! Only 5 people witnessed it. They invited reporters but no one came. The brothers flipped a coin to see who would fly first - Wilbur won but crashed. Orville went next and succeeded. Neither brother married or went to college!",
+    funFactSource: "Smithsonian National Air and Space Museum",
+    funFactSourceUrl: "https://airandspace.si.edu/stories/editorial/wright-brothers-flight-1903"
+  },
+  
+  {
+    id: 89,
+    type: "invention",
+    name: "Wheel",
+    year: "c. 3500 BCE",
+    location: "Mesopotamia",
+    era: "Ancient",
+    category: "Transportation",
+    difficulty: "medium",
+    clues: [
+      "One of humanity's most important inventions",
+      "First evidence around 3500 BCE",
+      "Initially used for pottery, not transportation",
+      "Revolutionized transportation and commerce",
+      "Invented independently in multiple locations",
+      "Simple circular device that changed civilization"
+    ],
+    funFact: "The wheel was invented 2,000 years AFTER the pyramids were built! It wasn't used for transportation for 300 years after invention. Some advanced civilizations (like the Incas) never used wheeled vehicles. The wheelbarrow wasn't invented until 1,000 years after the wheel! Ancient Mesopotamians used wheels for pottery first.",
+    funFactSource: "Smithsonian Magazine",
+    funFactSourceUrl: "https://www.smithsonianmag.com/science-nature/a-salute-to-the-wheel-31805121/"
+  },
+  
+  {
+    id: 90,
+    type: "invention",
+    name: "Compass",
+    year: "c. 206 BCE",
+    location: "China",
+    era: "Ancient",
+    category: "Navigation",
+    difficulty: "medium",
+    clues: [
+      "Navigation tool using Earth's magnetic field",
+      "Invented in ancient China during Han Dynasty",
+      "Originally used for feng shui, not navigation",
+      "Enabled Age of Exploration",
+      "Pointed to magnetic north",
+      "Revolutionized sea travel and exploration"
+    ],
+    funFact: "The compass was invented for fortune-telling, not navigation! Ancient Chinese used it for feng shui to align buildings. It wasn't used for navigation for 1,000 years. Europeans didn't get it until the 1100s. The compass points to magnetic north, not true north. Vikings may have used 'sunstones' instead of compasses!",
+    funFactSource: "National Geographic",
+    funFactSourceUrl: "https://www.nationalgeographic.org/encyclopedia/compass/"
+  },
+  
+  {
+    id: 91,
+    type: "invention",
+    name: "Vaccine (Smallpox)",
+    year: "1796",
+    location: "England",
+    era: "Modern",
+    category: "Medicine",
+    difficulty: "medium",
+    clues: [
+      "Medical breakthrough preventing deadly disease",
+      "Edward Jenner tested on 8-year-old boy",
+      "Used cowpox to create immunity to smallpox",
+      "First vaccine ever developed",
+      "Smallpox killed 30% of infected people",
+      "Eventually led to smallpox eradication in 1980"
+    ],
+    funFact: "Jenner tested the first vaccine on his gardener's 8-year-old son! He infected the boy with cowpox, then exposed him to smallpox. It worked, but would be illegal today! Vaccine comes from 'vacca' (Latin for cow). Smallpox is the only human disease ever eradicated. The last case was in 1977 in Somalia!",
+    funFactSource: "World Health Organization",
+    funFactSourceUrl: "https://www.who.int/news-room/feature-stories/detail/the-smallpox-vaccine-the-origins-of-vaccination"
+  },
+  
+  {
+    id: 92,
+    type: "invention",
+    name: "Transistor",
+    year: "1947",
+    location: "New Jersey, USA",
+    era: "Modern",
+    category: "Technology",
+    difficulty: "hard",
+    clues: [
+      "Semiconductor device that revolutionized electronics",
+      "Invented at Bell Labs in 1947",
+      "Replaced bulky vacuum tubes",
+      "Enabled miniaturization of electronics",
+      "Foundation of all modern computers and phones",
+      "Three inventors won Nobel Prize in Physics"
+    ],
+    funFact: "The transistor is the most manufactured device in history - 13 sextillion have been made! (13,000,000,000,000,000,000,000). A modern smartphone has 11+ billion transistors. Bell Labs kept it secret for 7 months. The inventors won the Nobel Prize. Without transistors, computers would still fill entire rooms!",
+    funFactSource: "Nobel Prize Organization",
+    funFactSourceUrl: "https://www.nobelprize.org/prizes/physics/1956/summary/"
+  },
+  
+  {
+    id: 93,
+    type: "invention",
+    name: "Anesthesia",
+    year: "1846",
+    location: "Boston, USA",
+    era: "Modern",
+    category: "Medicine",
+    difficulty: "medium",
+    clues: [
+      "Medical breakthrough eliminating pain during surgery",
+      "First public demonstration in 1846",
+      "Used ether to make patient unconscious",
+      "Before this, patients were awake during operations",
+      "Revolutionized surgery and dentistry",
+      "Called the greatest medical discovery ever"
+    ],
+    funFact: "Before anesthesia, surgeons competed on speed - some could amputate a leg in 30 seconds! Patients were held down screaming. The first public demonstration was called 'Ether Day.' The patient said 'I feel no pain' after surgery. Some doctors initially rejected it as unnatural. Today, 230+ million surgeries use anesthesia annually worldwide!",
+    funFactSource: "Massachusetts General Hospital",
+    funFactSourceUrl: "https://www.massgeneral.org/news/mgh-celebrates-ether-day"
+  },
+  
+  {
+    id: 94,
+    type: "invention",
+    name: "Steam Engine",
+    year: "1712-1776",
+    location: "England",
+    era: "Modern",
+    category: "Technology",
+    difficulty: "medium",
+    clues: [
+      "Power source that launched Industrial Revolution",
+      "Converted heat energy into mechanical work",
+      "James Watt greatly improved the design in 1776",
+      "Powered factories, trains, and ships",
+      "Replaced human and animal labor",
+      "Transformed manufacturing and transportation"
+    ],
+    funFact: "The first steam engines were incredibly inefficient - only 1% efficiency! Watt's improvements made them practical. The term 'horsepower' was invented by Watt to market his engines. Steam engines enabled factories to be built anywhere, not just near water. They burned so much coal that they changed Earth's climate!",
+    funFactSource: "Science Museum London",
+    funFactSourceUrl: "https://www.sciencemuseum.org.uk/objects-and-stories/james-watt-and-our-world"
+  },
+  
+  {
+    id: 95,
+    type: "invention",
+    name: "Photography",
+    year: "1826",
+    location: "France",
+    era: "Modern",
+    category: "Technology",
+    difficulty: "medium",
+    clues: [
+      "Method of capturing images permanently",
+      "First photo taken in 1826 by French inventor",
+      "Required 8-hour exposure time initially",
+      "Replaced portrait painting for many",
+      "Joseph Nicéphore Niépce created first photograph",
+      "Changed how we record history and memories"
+    ],
+    funFact: "The first photograph took 8 hours of exposure and shows buildings but no people (they moved)! Early photos required subjects to stay perfectly still for minutes. The first photo of a person was accidental - a man getting his shoes shined. The first selfie was taken in 1839! Lincoln used photos to win the presidency.",
+    funFactSource: "Harry Ransom Center",
+    funFactSourceUrl: "https://www.hrc.utexas.edu/collections/photography/"
+  },
+  
+  {
+    id: 96,
+    type: "invention",
+    name: "Concrete (Roman)",
+    year: "c. 300 BCE",
+    location: "Roman Empire",
+    era: "Ancient",
+    category: "Construction",
+    difficulty: "hard",
+    clues: [
+      "Building material stronger than stone",
+      "Ancient Romans perfected the formula",
+      "Enabled construction of Pantheon and Colosseum",
+      "Lost after fall of Rome, rediscovered in 1700s",
+      "Made from volcanic ash, lime, and seawater",
+      "Roman concrete is stronger than modern concrete"
+    ],
+    funFact: "Roman concrete gets STRONGER over time - the opposite of modern concrete! Their secret ingredient was volcanic ash. The Pantheon's dome (built 2,000 years ago) is still the world's largest unreinforced concrete dome. The recipe was lost for 1,000 years. We only recently figured out why it's superior to modern concrete!",
+    funFactSource: "MIT News",
+    funFactSourceUrl: "https://news.mit.edu/2023/roman-concrete-self-healing-0106"
+  },
+  
+  {
+    id: 97,
+    type: "invention",
+    name: "Eyeglasses",
+    year: "c. 1290",
+    location: "Italy",
+    era: "Medieval",
+    category: "Medical Device",
+    difficulty: "hard",
+    clues: [
+      "Optical device correcting vision problems",
+      "Invented in Italy in the late 1200s",
+      "Used convex lenses for farsightedness",
+      "Extended working lives of scholars and craftsmen",
+      "Bifocals added by Benjamin Franklin",
+      "One of the most important medical inventions"
+    ],
+    funFact: "The inventor of eyeglasses is unknown - glassmakers kept it secret to protect their profits! Early glasses had no temples - you had to hold them up or balance them on your nose. Bifocals were invented by Benjamin Franklin in 1784. Eyeglasses doubled the working life of skilled workers. 75% of adults use vision correction today!",
+    funFactSource: "College of Optometrists",
+    funFactSourceUrl: "https://www.college-optometrists.org/the-college/museum/online-exhibitions/spectacles/"
+  },
+  
+  {
+    id: 98,
+    type: "invention",
+    name: "Antibiotics (Mass Production)",
+    year: "1942",
+    location: "USA/UK",
+    era: "Modern",
+    category: "Medicine",
+    difficulty: "medium",
+    clues: [
+      "Mass production of life-saving medicine during WWII",
+      "Scaled up penicillin manufacturing",
+      "Saved countless soldiers' lives",
+      "Used deep-tank fermentation process",
+      "Made antibiotics widely available",
+      "Transformed medicine and increased life expectancy"
+    ],
+    funFact: "Antibiotic mass production was a military secret in WWII! Moldy cantaloupe from a Peoria market provided the best penicillin strain. Production increased from treating 100 patients in 1942 to 250,000 by D-Day! The Allies had antibiotics, the Axis didn't - a huge advantage. It increased human life expectancy by 23 years!",
+    funFactSource: "American Chemical Society",
+    funFactSourceUrl: "https://www.acs.org/content/acs/en/education/whatischemistry/landmarks/flemingpenicillin.html"
+  },
+  
+  {
+    id: 99,
+    type: "invention",
+    name: "Refrigeration",
+    year: "1850s",
+    location: "USA/Europe",
+    era: "Modern",
+    category: "Technology",
+    difficulty: "medium",
+    clues: [
+      "Method of preserving food at low temperatures",
+      "Developed in the mid-1800s",
+      "Used vapor-compression cycle",
+      "Transformed food distribution and diet",
+      "Before this, ice was harvested from frozen lakes",
+      "Revolutionized food storage and public health"
+    ],
+    funFact: "Before refrigeration, ice was a luxury shipped from frozen lakes to the tropics! The ice trade was a major industry. Early home refrigerators used toxic gases - hundreds died from leaks. Freon seemed safe but destroyed the ozone layer. Refrigeration lets us eat fresh food year-round and saves millions from foodborne illness!",
+    funFactSource: "Smithsonian Magazine",
+    funFactSourceUrl: "https://www.smithsonianmag.com/history/the-great-ice-trade-180960716/"
+  },
+  
+  {
+    id: 100,
+    type: "invention",
+    name: "Satellite (Sputnik)",
+    year: "1957",
+    location: "Soviet Union",
+    era: "Modern",
+    category: "Space Technology",
+    difficulty: "medium",
+    clues: [
+      "First artificial object to orbit Earth",
+      "Launched by Soviet Union on October 4, 1957",
+      "Started the Space Race",
+      "Beeped radio signals as it orbited",
+      "Shocked the United States",
+      "Sputnik 1 opened the Space Age"
+    ],
+    funFact: "Sputnik means 'traveling companion' in Russian! It was only 23 inches wide and weighed 184 pounds - about the size of a beach ball. It orbited Earth every 96 minutes, sending 'beep beep' signals. Americans panicked, thinking the Soviets could now drop bombs from space. This launched NASA and the Space Race!",
+    funFactSource: "NASA",
+    funFactSourceUrl: "https://www.nasa.gov/history/sputnik-1-october-4-1957/"
   }
 ];
 
