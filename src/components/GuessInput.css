@@ -20,8 +20,8 @@
 
 .guess-input:focus {
   outline: none;
-  border-color: #ef4444;
-  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+  border-color: #1e40af;
+  box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.1);
 }
 
 .guess-input:disabled {
@@ -35,7 +35,7 @@
   left: 0;
   right: 0;
   background: white;
-  border: 2px solid #ef4444;
+  border: 2px solid #1e40af;
   border-top: none;
   border-radius: 0 0 12px 12px;
   list-style: none;
@@ -59,7 +59,7 @@
 }
 
 .suggestion-item:hover {
-  background: #fef2f2;
+  background: #eff6ff;
 }
 
 @media (max-width: 480px) {

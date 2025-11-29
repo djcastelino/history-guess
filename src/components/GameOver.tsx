@@ -10,9 +10,10 @@ interface GameOverProps {
   guesses: string[];
   puzzleType: PuzzleType;
   onStatsClick: () => void;
+  onArchiveClick: () => void;
 }
 
-export default function GameOver({ isWon, puzzle, guessCount, puzzleNumber, guesses, puzzleType, onStatsClick }: GameOverProps) {
+export default function GameOver({ isWon, puzzle, guessCount, puzzleNumber, guesses, puzzleType, onStatsClick, onArchiveClick }: GameOverProps) {
   const handleShare = () => {
     const shareText = generateShareText(isWon, guesses, puzzleNumber, puzzleType);
     
@@ -75,9 +76,14 @@ export default function GameOver({ isWon, puzzle, guessCount, puzzleNumber, gues
         <button onClick={handleShare} className="share-button">
           📤 Share Result
         </button>
-        <button onClick={onStatsClick} className="stats-button">
-          📊 View Stats
-        </button>
+        <div className="secondary-buttons">
+          <button onClick={onStatsClick} className="stats-button">
+            📊 Stats
+          </button>
+          <button onClick={onArchiveClick} className="archive-button">
+            📚 Archive
+          </button>
+        </div>
       </div>
 
       <p className="next-puzzle-info">

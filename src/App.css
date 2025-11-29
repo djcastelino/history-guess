@@ -13,7 +13,7 @@ body {
 
 .app {
   min-height: 100vh;
-  background: linear-gradient(to bottom, #fef2f2 0%, #fee2e2 100%);
+  background: linear-gradient(to bottom, #eff6ff 0%, #dbeafe 100%);
 }
 
 .main-content {
@@ -29,7 +29,7 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+  background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%);
   color: white;
 }
 
@@ -52,5 +52,51 @@ body {
 .error-screen p {
   margin-top: 1rem;
   font-size: 1.1rem;
+}
+
+.archive-game-complete {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.archive-game-complete p {
+  margin: 0 0 1.5rem 0;
+  font-size: 1.1rem;
+  color: #4caf50;
+}
+
+.back-to-today,
+.browse-archive {
+  padding: 1rem 1.5rem;
+  margin: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.back-to-today {
+  background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%);
+  color: white;
+}
+
+.back-to-today:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(30, 64, 175, 0.3);
+}
+
+.browse-archive {
+  background: linear-gradient(135deg, #6b7280 0%, #4b5563 100%);
+  color: white;
+}
+
+.browse-archive:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(107, 114, 128, 0.3);
 }
 

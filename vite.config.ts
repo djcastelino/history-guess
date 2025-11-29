@@ -13,7 +13,7 @@ export default defineConfig({
         name: 'History Guess - Daily History Challenge',
         short_name: 'HistoryGuess',
         description: 'Guess historical figures, events, and inventions from 6 progressive clues. A new challenge every day!',
-        theme_color: '#dc2626',
+        theme_color: '#1e40af',
         background_color: '#ffffff',
         display: 'standalone',
         icons: [

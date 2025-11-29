@@ -8,6 +8,7 @@ import GuessInput from './components/GuessInput';
 import GuessList from './components/GuessList';
 import GameOver from './components/GameOver';
 import Stats from './components/Stats';
+import Archive from './components/Archive';
 import './App.css';
 
 const MAX_GUESSES = 6;
@@ -27,6 +28,9 @@ function App() {
   });
   const [loading, setLoading] = useState(true);
   const [showStats, setShowStats] = useState(false);
+  const [showArchive, setShowArchive] = useState(false);
+  const [archiveMode, setArchiveMode] = useState(false);
+  const [archivePuzzleNumber, setArchivePuzzleNumber] = useState<number | null>(null);
 
   useEffect(() => {
     initGame();
@@ -108,7 +112,7 @@ function App() {
       isWon: isCorrect,
     };
 
-    if (isComplete) {
+    if (isComplete && !archiveMode) {
       updateStats(isCorrect, newGuesses.length, gameState.puzzleType);
       
       const stats = JSON.parse(localStorage.getItem('historyguess-stats') || '{}');
@@ -118,8 +122,20 @@ function App() {
       newState.gamesWon = stats.gamesWon || 0;
     }
 
+    // Save archive puzzle completion
+    if (isComplete && archiveMode && archivePuzzleNumber) {
+      const archiveData = JSON.parse(localStorage.getItem('historyguess-archive') || '{}');
+      archiveData[archivePuzzleNumber] = {
+        solved: isCorrect,
+        guesses: newGuesses.length
+      };
+      localStorage.setItem('historyguess-archive', JSON.stringify(archiveData));
+    }
+
     setGameState(newState);
-    saveGameState(newState);
+    if (!archiveMode) {
+      saveGameState(newState);
+    }
   }
 
   if (loading) {
@@ -171,7 +187,7 @@ function App() {
           isWon={gameState.isWon}
         />
 
-        {gameState.isComplete && (
+        {gameState.isComplete && !archiveMode && (
           <GameOver
             isWon={gameState.isWon}
             puzzle={gameState.targetPuzzle}
@@ -180,13 +196,47 @@ function App() {
             guesses={gameState.guesses}
             puzzleType={gameState.puzzleType}
             onStatsClick={() => setShowStats(true)}
+            onArchiveClick={() => setShowArchive(true)}
           />
+        )}
+
+        {gameState.isComplete && archiveMode && (
+          <div className="archive-game-complete">
+            <p>✅ Archive puzzle complete! (Doesn't affect streak)</p>
+            <button onClick={() => {
+              setArchiveMode(false);
+              setArchivePuzzleNumber(null);
+              initGame();
+            }} className="back-to-today">
+              ← Back to Today's Puzzle
+            </button>
+            <button onClick={() => setShowArchive(true)} className="browse-archive">
+              📚 Browse More Puzzles
+            </button>
+          </div>
         )}
       </main>
 
       <Stats 
         isOpen={showStats}
         onClose={() => setShowStats(false)}
+      />
+
+      <Archive
+        isOpen={showArchive}
+        onClose={() => setShowArchive(false)}
+        onSelectPuzzle={(puzzle, puzzleNumber) => {
+          setShowArchive(false);
+          setArchiveMode(true);
+          setArchivePuzzleNumber(puzzleNumber);
+          setGameState({
+            ...gameState,
+            targetPuzzle: puzzle,
+            guesses: [],
+            isComplete: false,
+            isWon: false,
+          });
+        }}
       />
     </div>
   );
