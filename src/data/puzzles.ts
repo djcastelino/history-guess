@@ -219,7 +219,7 @@ export const PUZZLES: HistoryPuzzle[] = [
       "Worked briefly for Thomas Edison before their famous rivalry",
       "Held nearly 300 patents for various inventions",
       "Experimented with wireless power transmission",
-      "The Tesla coil and electric car company are named after him"
+      "The coil device and electric car company are named after him"
     ],
     funFact: "Tesla had an eidetic memory and could visualize inventions in such detail that he could build them without drawings. He claimed he could run an invention in his mind for weeks, then examine it for wear!",
     funFactSource: "Tesla Museum Belgrade",
@@ -407,7 +407,7 @@ export const PUZZLES: HistoryPuzzle[] = [
       "Symbolized the conclusion of the Cold War",
       "Occurred in divided Germany in November 1989",
       "Citizens began dismantling concrete barrier with hammers and pickaxes",
-      "Reunited East and West Berlin after 28 years"
+      "Reunited a divided city after 28 years of separation"
     ],
     funFact: "The opening of the Berlin Wall was actually announced by mistake! Spokesman Günter Schabowski misunderstood a memo and announced immediate border opening during a press conference. It was supposed to be gradual, but thousands rushed to the wall immediately!",
     funFactSource: "BBC History",
@@ -1227,7 +1227,7 @@ export const PUZZLES: HistoryPuzzle[] = [
       "Worked briefly for Thomas Edison before rivalry",
       "Held over 300 patents for electrical devices",
       "Envisioned wireless power transmission",
-      "The Tesla coil and electric car company bear his name"
+      "The coil device and electric car company bear his name"
     ],
     funFact: "Tesla claimed to have invented a 'death ray' weapon! He also said he could split the Earth in half like an apple. Despite his brilliance, he died poor and alone in a New York hotel room. He was obsessed with the number 3 and had a photographic memory. The unit of magnetic flux density (Tesla) is named after him.",
     funFactSource: "Tesla Science Center",
@@ -1426,7 +1426,7 @@ export const PUZZLES: HistoryPuzzle[] = [
       "Inventor, scientist, diplomat, and writer",
       "Proved lightning is electricity with kite experiment",
       "Helped draft the Declaration of Independence",
-      "Invented bifocals, lightning rod, and Franklin stove",
+      "Invented bifocals, lightning rod, and a popular heating stove",
       "Face on US $100 bill, never served as president"
     ],
     funFact: "Benjamin Franklin never patented any of his inventions because he wanted everyone to benefit! He founded the first public library, fire department, and postal system in America. He was a ladies' man in Paris at age 70+. He proposed Daylight Saving Time. He's the only Founding Father who signed all 4 key documents of US founding!",
@@ -1452,7 +1452,7 @@ export const PUZZLES: HistoryPuzzle[] = [
       "Concrete barrier had separated families for 28 years",
       "Happened on November 9, 1989",
       "East Germans were allowed to cross freely for first time",
-      "Berlin Wall fell, reuniting East and West Germany"
+      "The wall fell, reuniting East and West Germany"
     ],
     funFact: "The Fall of the Berlin Wall happened by accident! A spokesperson mistakenly announced that East Germans could cross the border 'immediately' when he meant the next day. Thousands rushed to the wall, guards had no orders, and they opened the gates. David Hasselhoff performed there shortly after. Pieces of the wall are now sold worldwide!",
     funFactSource: "BBC History",
@@ -1473,7 +1473,7 @@ export const PUZZLES: HistoryPuzzle[] = [
       "Established principle that everyone is subject to law",
       "Signed at Runnymede meadow in June 1215",
       "Foundation for constitutional law and human rights",
-      "King John sealed the Magna Carta under pressure"
+      "King John sealed the historic charter under pressure from barons"
     ],
     funFact: "The Magna Carta didn't give rights to common people - only to wealthy barons! King John had it annulled by the Pope 10 weeks later, which started a civil war. Only 3 of the original 63 clauses remain in British law today. Of 4 original copies, one sold for $21.3 million! It influenced the US Constitution and Bill of Rights.",
     funFactSource: "British Library",
@@ -1494,7 +1494,7 @@ export const PUZZLES: HistoryPuzzle[] = [
       "First humans to land on another celestial body",
       "Armstrong's famous 'one small step' quote",
       "Watched by 600 million people on TV",
-      "NASA's Apollo 11 landed humans on the Moon"
+      "NASA's historic mission landed humans on the Moon"
     ],
     funFact: "The Apollo 11 computer had less power than a modern smartphone! Armstrong had only 25 seconds of fuel left when landing. Buzz Aldrin took communion on the Moon. They left a disc with messages from 73 world leaders, Apollo 1 mission patch, and US flag. Armstrong's first step was actually a 3.5-foot drop!",
     funFactSource: "NASA",
@@ -1515,7 +1515,7 @@ export const PUZZLES: HistoryPuzzle[] = [
       "Allied forces landed on five French beaches",
       "Turning point of World War II in Europe",
       "Code-named Operation Overlord",
-      "Over 150,000 troops landed in Normandy on D-Day"
+      "Over 150,000 Allied troops landed in Normandy on June 6, 1944"
     ],
     funFact: "D-Day involved the most elaborate deception in military history! Operation Bodyguard used fake armies, dummy tanks, and fake radio traffic to trick the Germans. The invasion was delayed 24 hours due to weather. Over 4,000 Allied soldiers died that day. Hitler was asleep and his staff feared waking him to tell him about the invasion!",
     funFactSource: "National WWII Museum",
@@ -1534,7 +1534,7 @@ export const PUZZLES: HistoryPuzzle[] = [
       "Political protest against British taxation",
       "Occurred on December 16, 1773",
       "Colonists disguised as Native Americans",
-      "Dumped 342 chests into Boston Harbor",
+      "Dumped 342 chests of tea into the harbor",
       "Protest against Tea Act and 'taxation without representation'",
       "Sparked the American Revolutionary War"
     ],
@@ -1620,7 +1620,7 @@ export const PUZZLES: HistoryPuzzle[] = [
       "Made books accessible beyond wealthy elite",
       "Printed in Latin in the 1450s",
       "Only 180 copies produced, 49 survive",
-      "Johannes Gutenberg's printing press changed history"
+      "The inventor's movable type printing press changed history"
     ],
     funFact: "Gutenberg's Bible revolutionized the world but left him bankrupt! Each Bible had 1,282 pages and took 3 years to print all copies. Today, a complete Gutenberg Bible sold for $5.4 million! Gutenberg's movable type printing spread across Europe in 50 years. This invention enabled the Renaissance and Reformation!",
     funFactSource: "British Library",
@@ -1641,7 +1641,7 @@ export const PUZZLES: HistoryPuzzle[] = [
       "Angry mob attacked royal fortress and prison",
       "Found only 7 prisoners inside",
       "Symbol of monarchy's tyranny",
-      "France celebrates Bastille Day as national holiday"
+      "France celebrates this event as July 14 national holiday"
     ],
     funFact: "Only 7 prisoners were in the Bastille when it fell - 4 forgers, 2 lunatics, and 1 aristocrat! The prison was going to be demolished anyway. The mob's original goal was to get gunpowder. The fortress was demolished and sold as souvenirs. The governor's head was paraded on a pike. This sparked the violent French Revolution!",
     funFactSource: "Smithsonian Magazine",
@@ -2056,7 +2056,7 @@ export const PUZZLES: HistoryPuzzle[] = [
       "Enabled construction of Pantheon and Colosseum",
       "Lost after fall of Rome, rediscovered in 1700s",
       "Made from volcanic ash, lime, and seawater",
-      "Roman concrete is stronger than modern concrete"
+      "Ancient Roman formula is stronger than modern versions"
     ],
     funFact: "Roman concrete gets STRONGER over time - the opposite of modern concrete! Their secret ingredient was volcanic ash. The Pantheon's dome (built 2,000 years ago) is still the world's largest unreinforced concrete dome. The recipe was lost for 1,000 years. We only recently figured out why it's superior to modern concrete!",
     funFactSource: "MIT News",
