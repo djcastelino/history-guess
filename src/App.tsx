@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import type { GameState, HistoryPuzzle } from './types';
 import { PUZZLES } from './data/puzzles';
 import { loadGameState, saveGameState, isNewDay, updateStats, getTodaysPuzzleType, getTodaysPuzzleNumber } from './utils/storage';
+import { initGA, trackPageView, trackGameStart, trackGameComplete, trackGuess, trackShare, trackStatsView, trackArchiveView } from './utils/analytics';
 import Header from './components/Header';
 import ClueDisplay from './components/ClueDisplay';
 import GuessInput from './components/GuessInput';
@@ -35,6 +36,10 @@ function App() {
   const [archivePuzzleNumber, setArchivePuzzleNumber] = useState<number | null>(null);
 
   useEffect(() => {
+    // Initialize Google Analytics
+    initGA();
+    trackPageView(window.location.pathname);
+
     // Check for test mode in URL
     const urlParams = new URLSearchParams(window.location.search);
     const testParam = urlParams.get('test');
@@ -73,6 +78,9 @@ function App() {
 
       if (shouldStartNewGame) {
         const dailyPuzzle = getTodaysPuzzle();
+        
+        // Track game start
+        trackGameStart(dailyPuzzle.name, dailyPuzzle.type);
         
         const newState: GameState = {
           targetPuzzle: dailyPuzzle,
@@ -116,6 +124,9 @@ function App() {
     const newGuesses = [...gameState.guesses, guessName];
     const isComplete = isCorrect || newGuesses.length >= MAX_GUESSES;
 
+    // Track the guess
+    trackGuess(isCorrect, newGuesses.length);
+
     const newState: GameState = {
       ...gameState,
       guesses: newGuesses,
@@ -124,6 +135,9 @@ function App() {
     };
 
     if (isComplete && !archiveMode) {
+      // Track game completion
+      trackGameComplete(isCorrect, newGuesses.length, gameState.targetPuzzle.name, gameState.targetPuzzle.type);
+      
       updateStats(isCorrect, newGuesses.length, gameState.puzzleType);
       
       const stats = JSON.parse(localStorage.getItem('historyguess-stats') || '{}');
@@ -229,8 +243,15 @@ function App() {
             puzzleNumber={getTodaysPuzzleNumber()}
             guesses={gameState.guesses}
             puzzleType={gameState.puzzleType}
-            onStatsClick={() => setShowStats(true)}
-            onArchiveClick={() => setShowArchive(true)}
+            onStatsClick={() => {
+              trackStatsView();
+              setShowStats(true);
+            }}
+            onArchiveClick={() => {
+              trackArchiveView();
+              setShowArchive(true);
+            }}
+            onShare={() => trackShare()}
           />
         )}
 
