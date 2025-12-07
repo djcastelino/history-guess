@@ -1,6 +1,6 @@
 import ReactGA from 'react-ga4';
 
-const MEASUREMENT_ID = 'G-KF40BBWBGS';
+const MEASUREMENT_ID = 'G-TMJBDK16CQ';
 
 // Initialize Google Analytics
 export const initGA = () => {
@@ -75,4 +75,5 @@ export const trackPuzzleView = (puzzleName: string, puzzleType: string, difficul
     value: difficulty === 'easy' ? 1 : difficulty === 'medium' ? 2 : 3,
   });
 };
+
 
